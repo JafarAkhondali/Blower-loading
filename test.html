@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .leaf{
+            transition: linear all 2.5s ;
+            -webkit-transition: linear all 2.5s;
+            /*border-radius: 100% 100% 200% 200%;
+
+            background-color: darkorange;
+
+            */
+            width: 10px;
+            height: 15px;
+            background-image: url('img/leaf.png') ;
+            background-size: contain;
+
+            position: absolute;
+            right: 5%;
+            top: 5px;
+            z-index: 5;
+        }
+        .laeaf::after{
+            content: ' ';
+            display: inline-block;
+            width: 8px;
+            margin-left: 15px;
+            height: 1px;
+            position: absolute;
+            top:45%;
+            background: darkorange;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="leaf"></div>
+</body>
+</html>

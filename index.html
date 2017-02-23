@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paste Blower</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/loading_blower.js"></script>
+    <link  href="css/style.css" rel="stylesheet"/>
+    <link  href="css/demo2.css" rel="stylesheet"/>
+    <style>
+        /*ONLY FOR DEMO*/
+        #plus_ten{
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div id="loadingContainer">
+    <div class="loadingbar">
+        <div class="marker_container">
+            <div class="marker"></div>
+            <div class="marker"></div>
+            <div class="marker"></div>
+            <div class="marker"></div>
+        </div>
+        <div class="filler_wrapper">
+            <div class="filler">
+                <span class="value">0%</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button id="plus_ten" >Add +1 </button>
+
+
+<script>
+    var blower = null;
+    $(document).ready(function () {
+        blower = new LoadingBlower("#loadingContainer");
+
+        $("#plus_ten").on("click",function () {
+            blower.addProgress(10);
+            console.log('btn clicked');
+        });
+
+    });
+
+
+
+</script>
+</body>
+</html>

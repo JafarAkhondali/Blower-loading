@@ -1,0 +1,27 @@
+{
+  "name": "fancy-blower-loading",
+  "version": "0.8.0",
+  "description": "A fancy loading blower based on a gif, built with typescript and sass as a jquery plugin",
+  "main": ".",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JafarAkhondali/Blower-Loading.git"
+  },
+  "keywords": [
+    "loading",
+    "fancy",
+    "blower",
+    "jquery",
+    "sass",
+    "typescript"
+  ],
+  "author": "Jafar Akhondali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JafarAkhondali/Blower-Loading/issues"
+  },
+  "homepage": "https://github.com/JafarAkhondali/Blower-Loading#readme"
+}
